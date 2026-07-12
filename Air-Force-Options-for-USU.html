@@ -51,9 +51,20 @@
   .contact a { color: #14315c; text-decoration: none; font-weight: bold; }
   .callphone { font-size: 15pt; font-weight: bold; color: #1F3864; }
 
-  /* Q&A "homework" blocks */
-  .qh { font-weight: bold; color: #2E75B6; text-transform: uppercase; font-size: 9.5pt; letter-spacing: .6px; margin: 16px 0 8px; }
+  /* Q&A "homework" cards */
+  .section-card { border: 1px solid #dbe4f2; border-radius: 10px; margin: 14px 0; background: #fbfcfe; }
+  .qh { font-weight: bold; color: #fff; text-transform: uppercase; font-size: 10.5pt; letter-spacing: .8px; margin: 0; padding: 9px 15px; background: #2E75B6; border-radius: 9px 9px 0 0; break-after: avoid; page-break-after: avoid; }
+  .card-body { padding: 13px 16px 4px; }
+  .qh.c-blue  { background: #2E75B6; }
+  .qh.c-navy  { background: #1F3864; }
+  .qh.c-green { background: #2f9e56; }
+  .qh.c-amber { background: #b5751a; }
+  .section-card.s-blue  { border-color: #bcd4ee; }
+  .section-card.s-navy  { border-color: #c1cde0; }
+  .section-card.s-green { border-color: #bfe3cb; }
+  .section-card.s-amber { border-color: #ecd9b3; }
   .qa { margin: 0 0 13px; page-break-inside: avoid; }
+  .qa:last-child { margin-bottom: 8px; }
   .qa .q { font-weight: bold; color: #14315c; margin: 0 0 2px; }
   .qa .a { margin: 0 0 3px; }
   .qa .ask { font-size: 9.5pt; color: #1c6b3c; font-style: italic; margin: 0; padding-left: 14px; border-left: 2px solid #a9d8ba; }
@@ -84,7 +95,7 @@
     .play .big { font-size: 18px; }
     .contact { font-size: 17px; }
     .callphone { font-size: 21px; }
-    .qh { font-size: 12.5px; }
+    .qh { font-size: 13px; }
     .qa .ask, .tip { font-size: 13px; }
   }
   @media screen and (max-width: 520px) {
@@ -135,7 +146,9 @@
   <h2>The homework I did for you <span class="lead">&mdash; skim this so you sound sharp on the call</span></h2>
   <p>Here&rsquo;s what I found on your questions. Know the gist walking in, then let the detachment confirm the details for <em>your</em> situation. The green italics are the things only they can nail down for you.</p>
 
-  <div class="qh">Getting in</div>
+  <div class="section-card s-blue">
+  <div class="qh c-blue">Getting in</div>
+  <div class="card-body">
 
   <div class="qa">
     <p class="q">How do I join as an incoming freshman?</p>
@@ -148,7 +161,12 @@
     <p class="a"><strong>Yes &mdash; the first two years carry zero military obligation</strong> if you&rsquo;re not on a scholarship. You can explore it, decide it&rsquo;s not for you, and walk away with no strings attached. The commitment doesn&rsquo;t kick in until your junior year (or the moment you activate a scholarship).</p>
   </div>
 
-  <div class="qh">How ROTC actually works</div>
+  </div>
+  </div>
+
+  <div class="section-card s-navy">
+  <div class="qh c-navy">How ROTC actually works</div>
+  <div class="card-body">
 
   <div class="qa">
     <p class="q">What&rsquo;s the weekly time commitment while I&rsquo;m in school?</p>
@@ -171,7 +189,12 @@
     <p class="ask">Ask them: given the major I&rsquo;m considering, does it help or hurt my scholarship odds?</p>
   </div>
 
-  <div class="qh">Scholarships &amp; money</div>
+  </div>
+  </div>
+
+  <div class="section-card s-green">
+  <div class="qh c-green">Scholarships &amp; money</div>
+  <div class="card-body">
 
   <div class="qa">
     <p class="q">What scholarships can I get &mdash; and can I still get a 4-year one?</p>
@@ -189,7 +212,12 @@
     <p class="a"><strong>Full tuition + most fees, $900/year for books, and a tax-free monthly stipend</strong> ($300 as a freshman rising to $500 as a senior). One honest heads-up: it does <strong>not</strong> cover room and board &mdash; so budget for housing/food separately.</p>
   </div>
 
-  <div class="qh">Commitment &amp; timeline &mdash; know this before you dial</div>
+  </div>
+  </div>
+
+  <div class="section-card s-amber">
+  <div class="qh c-amber">Commitment &amp; timeline &mdash; know this before you dial</div>
+  <div class="card-body">
 
   <div class="qa">
     <p class="q">When do I sign a contract, and when am I locked in?</p>
@@ -215,6 +243,9 @@
     <p class="q">Quick eligibility check (so nothing surprises you)</p>
     <p class="a">U.S. citizen (or become one by the end of freshman year); pass a fitness test (push-ups, sit-ups, timed run) and a medical exam; keep a solid GPA (they want ~2.5+, and higher to win scholarships). Nothing here should be a problem &mdash; just know it&rsquo;s coming.</p>
     <p class="ask">Ask them: &ldquo;Is there anything else you&rsquo;d tell a kid in my shoes that I don&rsquo;t know to ask?&rdquo;</p>
+  </div>
+
+  </div>
   </div>
 
   <div class="signoff">
